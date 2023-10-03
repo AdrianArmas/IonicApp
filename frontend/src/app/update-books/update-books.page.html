@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>update-books</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">update-books</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!--input-->
+  <ion-list>
+    <ion-item>
+      <ion-input labelPlacement="floating" placeholder="Enter book name">
+        <div slot="label">Book name <ion-text color="danger">(Required)</ion-text></div>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="floating" placeholder="Enter autor name">
+        <div slot="label">Autor name <ion-text color="danger">(Required)</ion-text></div>
+      </ion-input>
+    </ion-item>
+  </ion-list>
+  <!--Button-->
+  <ion-grid>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col><ion-button expand="block" (click)="updateBook()">add book</ion-button></ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--FOOTER-->
+  <!-- <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="gotoHome" (click)="gotoHome()">
+        <ion-icon name="home"></ion-icon>
+        Go Home
+      </ion-tab-button>
+      <ion-tab-button tab="gotoMyBooks" (click)="gotoMyBooks()">
+        <ion-icon name="library"></ion-icon>
+        Book's List
+      </ion-tab-button>
+      <ion-tab-button tab="gotoAddBooks" (click)="gotoAddBooks()">
+        <ion-icon name="add-circle"></ion-icon>
+        Add
+      </ion-tab-button>
+      <ion-tab-button tab="gotoDeleteBooks" (click)="gotoDeleteBooks()">
+        <ion-icon name="ban"></ion-icon>
+        Delete
+      </ion-tab-button>
+      <ion-tab-button tab="updateBook" (click)="gotoUpdateBooks()" id="present-alert">
+        <ion-alert trigger="present-alert" header="Alert" message="You are already on this page!"
+          [buttons]="alertButtons"></ion-alert>
+        <ion-icon name="repeat"></ion-icon>
+        Update
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs> -->
+
+</ion-content>
